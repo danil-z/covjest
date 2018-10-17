@@ -1,6 +1,8 @@
 module.exports = {
   preset: 'jest-preset-angular',
   roots: ['src'],
+  collectCoverage: true,
+  coverageReporters: ['json-summary', 'text', 'lcov'],
   setupTestFrameworkScriptFile: '<rootDir>/src/setup-jest.ts',
   moduleNameMapper: {
     '@app/(.*)': '<rootDir>/src/app/$1',
